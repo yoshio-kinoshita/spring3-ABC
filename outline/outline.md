@@ -28,7 +28,7 @@ Sprin3の概要と機能（Di,Aop）について解説。
 * 年齢：31才(1981年会)
 * 趣味：クライミング
 * 結婚：してます。
-* 性格：かなり適当。色々適当。
+* 性格：適当。
 * twitter:https://twitter.com/yoshio0440
 * facebook:https://www.facebook.com/kinoshita.yoshio
 * github:https://github.com/yoshio/
@@ -43,6 +43,14 @@ Springの概要について説明。
 * 色々なアプリケーションを作れる(スタンドアローン、バッチ、Web)。
 * Di,Aop,MVC,ORMなどの機能がある。
 
+### 軽量？
+
+軽量 != クラス数が少ない、ライブラリが少ない
+
+### 軽量ってなによ？
+
+Springが定義する軽量 = 変更時のインパクトが少ない。  
+
 ## Springが提供する機能
 [Spring Framework Runtime](http://static.springsource.org/spring/docs/3.2.x/spring-framework-reference/html/images/spring-overview.png)
 
@@ -50,11 +58,16 @@ Springの概要について説明。
 * ビジネスロジック層：Di,Aop
 * データアクセス層：Spring JDBC, Spring ORM(Hiberate, MyBatis)
 
+### 一般なフレームワークだと
+
+プレゼンテーション層(Apache Clickとか)だけ、データアクセス層(Hibernateとか)だけとかになる。
+Springだと１つで全階層使えるので楽。
+
 # アノテーションでDi
 Dipendency Injectionについて説明。
 
 ## IocとDi
-* SpringはIocをベースとしている。
+* SpringはIoc(Inversion of Control)をベースとしている。
 * SpringはIocの実装方法としてDiを選択
 [Ioc](http://ja.wikipedia.org/wiki/%E5%88%B6%E5%BE%A1%E3%81%AE%E5%8F%8D%E8%BB%A2)
 
@@ -62,8 +75,7 @@ Dipendency Injectionについて説明。
 * DiとはIocの実装方法の１つ
 * アノテーションを使ったDiはSpring2.5から登場した機能
 * それまではxmlで定義
-* アノテーションのほうがかなりコードがすっきりする。
-* Springはアノテーションを勧めている。
+
 
 ## Diの使いどころ
 
@@ -72,6 +84,8 @@ Dipendency Injectionについて説明。
 * データアクセス層
 
 ## サンプルDi
+
+Spring-Di参照
 
 # アノテーションでAop
 Aspect Oriented Programmingについて説明
@@ -83,4 +97,9 @@ Aspect Oriented Programmingについて説明
 
 * ログ出力
 * 例外処理
+
+## サンプルAop
+
+### アノテーションとxmlどっちがいいの？
+
 
