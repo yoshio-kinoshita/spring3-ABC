@@ -1,7 +1,21 @@
 <html>
 <body>
+<table>
+	<tr>
+		<td>–¼‘O</td>
+		<td>&nbsp;</td>
+		<td>•cŽš</td>
+	</tr>
+<form action="save" method="POST">
  #foreach( $member in $members)
- $member.firstName.$member.lastName<br>
+	<tr>
+		<td><input type="text" name="members[$velocityCount].firstName" value="$member.firstName"></td>
+		<td>.</td>
+		<td><input type="text" name="members[$velocityCount].lastName" value="$member.lastName"></td>
+	</tr>
  #end
+ </table>
+ <input type="submit" value="XV">
+</form>
 </body>
 </html>

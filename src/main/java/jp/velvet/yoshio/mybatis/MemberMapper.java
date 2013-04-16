@@ -95,4 +95,5 @@ public interface MemberMapper {
     int updateByPrimaryKey(Member record);
     
     List<Member> selectAll();
+    int deleteAll();
 }

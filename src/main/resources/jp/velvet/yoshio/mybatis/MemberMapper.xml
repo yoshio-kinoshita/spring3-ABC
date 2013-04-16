@@ -240,4 +240,7 @@
 		<include refid="Base_Column_List" />
 		from PUBLIC.MEMBER
 	</select>
+	<delete id="deleteAll" parameterType="java.lang.Integer">
+		delete from PUBLIC.MEMBER
+	</delete>
 </mapper>
