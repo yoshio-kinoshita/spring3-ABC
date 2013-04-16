@@ -145,7 +145,6 @@
 			<artifactId>poi</artifactId>
 			<version>3.2-FINAL</version>
 		</dependency>
-
 	</dependencies>
 	<packaging>war</packaging>
 	<properties>

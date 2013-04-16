@@ -1,0 +1,7 @@
+<html>
+<body>
+ #foreach( $member in $members)
+ $member.firstName
+ #end
+</body>
+</html>

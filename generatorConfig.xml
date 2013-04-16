@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+  <classPathEntry location="C:\Documents and Settings\ykinos\.m2\repository\org\hsqldb\hsqldb\2.2.8\hsqldb-2.2.8.jar"/>
+  <context id="trade" >
+    <jdbcConnection driverClass="org.hsqldb.jdbcDriver" connectionURL="jdbc:hsqldb:hsql://localhost/mydatabase" userId="sa" password="" />
+    <javaModelGenerator targetPackage="jp.velvet.yoshio.mybatis" targetProject="Spring-ABC" />
+    <sqlMapGenerator targetPackage="jp.velvet.yoshio.mybatis" targetProject="Spring-ABC" />
+    <javaClientGenerator targetPackage="jp.velvet.yoshio.mybatis" targetProject="Spring-ABC" type="XMLMAPPER" />
+    <table schema="PUBLIC" tableName="MEMBER" />
+  </context>
+</generatorConfiguration>
