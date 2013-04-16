@@ -1,7 +1,7 @@
 <html>
 <body>
  #foreach( $member in $members)
- $member.firstName
+ $member.firstName.$member.lastName<br>
  #end
 </body>
 </html>

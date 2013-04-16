@@ -232,4 +232,12 @@
 		LAST_NAME = #{lastName,jdbcType=VARCHAR}
 		where ID = #{id,jdbcType=INTEGER}
 	</update>
+	<select id="selectAll" resultMap="BaseResultMap">
+		select
+		<if test="distinct">
+			distinct
+		</if>
+		<include refid="Base_Column_List" />
+		from PUBLIC.MEMBER
+	</select>
 </mapper>
