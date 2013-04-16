@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional
 public class SampleServiceImpl implements SampleService {
 
 	@Autowired
@@ -23,7 +24,6 @@ public class SampleServiceImpl implements SampleService {
 	}
 
 	@Override
-	@Transactional
 	public void save(List<Member> members) {
 
 		memberMapper.deleteAll();
