@@ -70,11 +70,33 @@
 			<artifactId>velocity-tools</artifactId>
 			<version>2.0</version>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>${spring.framework}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>${aspectj.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>${aspectj.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.framework}</version>
+		</dependency>
 	</dependencies>
 	<packaging>war</packaging>
 	<properties>
 		<spring.framework>3.2.2.RELEASE</spring.framework>
 		<hibernate.validator>4.3.0.Final</hibernate.validator>
+		<aspectj.version>1.7.2</aspectj.version>
 	</properties>
 	<build>
 		<plugins>
