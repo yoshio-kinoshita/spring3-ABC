@@ -1,4 +1,4 @@
-package jp.velvet.yoshio;
+package jp.velvet.yoshio.aspect;
 
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
